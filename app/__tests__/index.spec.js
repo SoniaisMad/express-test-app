@@ -8,7 +8,7 @@ describe("Basic test", () => {
             const response = await request(app).get("/hello")
 
             expect(response.status).toEqual(200)
-            expect(response.text).toEqual("Hello World")
+            expect(response.text).toEqual("Hello Sonia")
 
             done()
         } catch (error) {
