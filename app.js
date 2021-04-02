@@ -1,7 +1,9 @@
 const app = require('./index');
 
-const server = app.listen(8081, function () {
-    console.log("Example app listening at http://%s:%s", "localhost", "8081")
+const port = process.env.PORT || 3000,
+
+const server = app.listen(port, function () {
+    console.log("Example app listening at http://%s:%s", "localhost", port)
  });
 
  module.exports = server
